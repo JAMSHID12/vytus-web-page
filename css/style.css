@@ -110,27 +110,23 @@ body {
     font-size: 15px;
 }
 
-.btn-call .btn img, .btn-mail img{
+.btn-call img, .btn-mail img{
     color: white;
     margin-right: 8px;
     width: 18px;
     height: auto;
 }
 
-.btn-call{
+.btn-call, .btn-mail{
     background-color: transparent;
     border-color: #24044D;
-}
-
-.btn-call .btn {
     color: #24044D;
-}
+}   
 
 .btn-mail {
-    background-color: transparent;
-    border-color: #24044D;
-    color: #24044D;
+    padding: 6px 30px;
 }
+
 
 .btn-call:hover,
 .btn-mail:hover {
