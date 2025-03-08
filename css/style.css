@@ -1,0 +1,217 @@
+body {
+    background-color: #008080;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.maintenance {
+    padding-top: 50px;
+}
+
+.image-container {
+    position: relative;
+    width: 90%;
+    height: 40vh;
+    background-image: url('../images/gallery/Banner_image.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 13px;
+}
+
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-content p {
+    width: 50%;
+    font-size: 1rem;
+    padding-top: 12px;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.centered-content h1 {
+    font-size: 2.1rem;
+    margin: 0;
+    font-weight: bold;
+    
+}
+
+.call-or-mail a {
+    text-decoration: none;
+}
+
+.want-to-know {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+.download-msg {
+    text-align: center;
+    font-size: 17px;
+}
+
+.download-btn {
+    background-color: #24044D;
+    border: none;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #ffffff;
+    color: #24044D;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.if-you-want-connect {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.btn-call,
+.btn-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn-call .btn img, .btn-mail img{
+    color: white;
+    margin-right: 8px;
+    width: 18px;
+    height: auto;
+}
+
+.btn-call{
+    background-color: transparent;
+    border-color: #24044D;
+}
+
+.btn-call .btn {
+    color: #24044D;
+}
+
+.btn-mail {
+    background-color: transparent;
+    border-color: #24044D;
+    color: #24044D;
+}
+
+.btn-call:hover,
+.btn-mail:hover {
+    background-color: #ffffff;
+}
+
+.maintenance hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #c5c3c3;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    opacity: 1;
+    background-color: #ffffff;
+    height: 1px;
+}
+
+
+footer {
+    font-size: 14px;
+    text-align: center;
+}
+
+footer p {
+    margin-left: 10px;
+    height: 14px;
+    color: #24044D;
+    
+}
+
+footer pre {
+    font-family: 'Poppins', sans-serif;
+    white-space: pre;
+    margin: 0;
+    padding: 0;
+}
+
+footer pre p a{
+    color: #ffffff;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .centered-content {
+        width: 95%;
+    }
+
+    .centered-content p {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .centered-content h1 {
+        width: 80%;
+        font-size: 1.8rem;
+    }
+
+    .want-to-know{
+        font-size: 22px;
+    }
+
+    .download-btn{
+        font-size: 14px;
+    }
+
+    .download-msg {
+        font-size: 16px;
+    }
+
+    .btn-call button, .btn-mail{
+        font-size: 16px;
+    }
+
+    .if-you-want-connect{
+        font-size: 15px;
+    }
+
+    .btn-call img, .btn-mail img{
+        width: 18px;
+    }
+}
