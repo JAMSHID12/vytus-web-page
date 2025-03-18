@@ -99,7 +99,7 @@ body {
 }
 
 
-.btn-call,
+.btn-location,
 .btn-mail {
     display: flex;
     align-items: center;
@@ -110,16 +110,20 @@ body {
     font-size: 15px;
 }
 
-.btn-call img, .btn-mail img{
+.btn-location img, .btn-mail img{
     color: white;
     margin-right: 8px;
     width: 18px;
     height: auto;
 }
 
-.btn-call, .btn-mail{
+.btn-location img{
+    width: 14px;
+}
+
+.btn-location, .btn-mail{
     background-color: transparent;
-    border-color: #24044D;
+    border-color: #c5c3c3;
     color: #24044D;
 }   
 
@@ -128,9 +132,10 @@ body {
 }
 
 
-.btn-call:hover,
+.btn-location:hover,
 .btn-mail:hover {
-    background-color: #ffffff;
+    background-color: #24044D;
+    color: #ffffff;
 }
 
 .maintenance hr {
